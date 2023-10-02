@@ -66,14 +66,6 @@ nav {
 .timeline-description {
   margin-bottom: 10px;
 }
-.about {
-  background-color: transparent;
-  background-image: url("images/1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  opacity: 1;
-}
 i:hover {
   color: blue;
 }
