@@ -1,11 +1,79 @@
 h1 {
+  margin-top: 2cm;
   text-align: center;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
 }
-
-/*font-family: 'Pacifico', cursive;
-font-family: 'Permanent Marker', cursive;
-font-family: 'Young Serif', serif;
-/*font-family: 'Dancing Script', cursive;
-font-family: 'Permanent Marker', cursive;
-font-family: 'Young Serif', serif;
+h2 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  margin-top: 3cm;
+}
+nav {
+  font-family: "Dancing Script", cursive;
+}
+.icon-container {
+  margin-top: 2cm;
+  display: flex;
+  font-size: 30px;
+  opacity: 0.45;
+}
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Dancing Script", cursive;
+}
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: #000;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+}
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  top: 0;
+  left: 50%;
+  margin-left: -10px;
+}
+.timeline-item.left .timeline-content {
+  left: 70%;
+}
+.timeline-item.right .timeline-content {
+  left: 20%;
+}
+.timeline-content {
+  position: relative;
+  left: 30px;
+}
+.timeline-date {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.timeline-description {
+  margin-bottom: 10px;
+}
+.about {
+  background-color: transparent;
+  background-image: url("images/1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 1;
+}
+i:hover {
+  color: blue;
+}
