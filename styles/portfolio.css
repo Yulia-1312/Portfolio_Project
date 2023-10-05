@@ -1,18 +1,23 @@
+:root {
+  --heading-font: "Pacifico", cursive;
+  --second-font: "Dancing Script", cursive;
+  --shadow: 2px 2px 5px grey;
+}
 h1 {
   margin-top: 2cm;
   text-align: center;
-  font-family: "Pacifico", cursive;
+  font-family: var(--heading-font);
 }
 h2 {
   text-align: center;
-  font-family: "Dancing Script", cursive;
+  font-family: var(--second-font);
   margin-top: 3cm;
 }
 nav {
-  font-family: "Dancing Script", cursive;
+  font-family: var(--second-font);
 }
 .titul {
-  font-family: "Pacifico", cursive;
+  font-family: var(--heading-font);
 }
 .icon-container {
   margin-top: 2cm;
@@ -24,8 +29,9 @@ nav {
   position: relative;
   max-width: 800px;
   margin: 0 auto;
-  padding: 40px 20px;
-  font-family: "Dancing Script", cursive;
+  padding: 20px 20px;
+  font-family: var(--second-font);
+  text-shadow: var(--shadow);
 }
 .timeline::after {
   content: "";
@@ -86,7 +92,7 @@ i:hover {
   line-height: 100px;
   color: black;
   font-size: 20px;
-  font-family: "Dancing Script", cursive;
+  font-family: var(--second-font);
   letter-spacing: 5px;
   padding: 15px;
 }
@@ -140,7 +146,7 @@ span:after {
   line-height: 50px;
   color: black;
   font-size: 20px;
-  font-family: "Dancing Script", cursive;
+  font-family: var(--second-font);
   letter-spacing: 4px;
   padding: 15px;
 }
@@ -186,11 +192,14 @@ span:after {
 .row-right {
   right: 20%;
 }
-.education {
-  font-family: "Dancing Script", cursive;
+.education,
+.languages {
+  font-family: var(--second-font);
   font-size: 23px;
+  text-shadow: var(--shadow);
 }
-.date {
+.date,
+.language {
   font-weight: 600;
   text-decoration: underline;
 }
