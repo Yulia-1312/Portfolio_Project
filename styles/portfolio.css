@@ -1,7 +1,7 @@
 :root {
   --heading-font: "Pacifico", cursive;
   --second-font: "Dancing Script", cursive;
-  --shadow: 2px 2px 5px grey;
+  --shadow: 2px 1px 3px grey;
 }
 h1 {
   margin-top: 2cm;
@@ -16,12 +16,16 @@ h2 {
 nav {
   font-family: var(--second-font);
 }
+a {
+  text-decoration: none;
+  color: grey;
+}
 .titul {
   font-family: var(--heading-font);
 }
 .icon-container {
-  margin-top: 2cm;
   display: flex;
+  justify-content: center;
   font-size: 30px;
   opacity: 0.45;
 }
@@ -69,12 +73,12 @@ nav {
   left: 30px;
 }
 .timeline-date {
-  font-weight: bold;
+  font-family: var(--heading-font);
   margin-bottom: 10px;
 }
 .timeline-description {
   margin-bottom: 10px;
-  max-width: 200px;
+  max-width: 500px;
 }
 i:hover {
   color: blue;
