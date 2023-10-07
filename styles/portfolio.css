@@ -207,8 +207,35 @@ span:after {
   font-weight: 600;
   text-decoration: underline;
 }
+.custom-class {
+  display: none;
+}
 @media (max-width: 600px) {
-  .timeline-item.right .timeline-content {
-    left: 70%;
+  .timeline-content {
+    display: contents;
+    margin: none;
+  }
+  .timeline-item.left {
+    text-align: center;
+  }
+  .timeline-item.right {
+    text-align: center;
+  }
+  .timeline::after,
+  .timeline-item::after {
+    display: none;
+  }
+  .custom-class {
+    display: block;
+    text-align: center;
+    margin: auto;
+    max-width: 300px;
+  }
+  .education {
+    font-size: 18px;
+    text-align: center;
+  }
+  .languages {
+    text-align: center;
   }
 }
