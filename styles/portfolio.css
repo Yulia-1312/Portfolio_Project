@@ -250,7 +250,48 @@ span:after {
     text-align: center;
   }
   .acontact {
-    margin: 2em;
-    font-size: 20px;
+    width: 90%;
+    font-size: 2vw;
+    letter-spacing: 0.5vw;
+    padding: 0.5em;
   }
+}
+.acontact:before,
+.acontact:after,
+span:before,
+span:after {
+  content: "";
+  position: absolute;
+  width: 1.5vw;
+  height: 1.5vw;
+  background: black;
+  transition: 1s;
+  mix-blend-mode: hue;
+}
+.acontact:before {
+  top: -1vw; /* Use vw for top */
+  left: -1vw; /* Use vw for left */
+}
+
+.acontact:after {
+  top: -1vw; /* Use vw for top */
+  right: -1vw; /* Use vw for right */
+}
+
+span:before {
+  bottom: -1vw; /* Use vw for bottom */
+  left: -1vw; /* Use vw for left */
+}
+
+span:after {
+  bottom: -1vw; /* Use vw for bottom */
+  right: -1vw; /* Use vw for right */
+}
+
+.acontact:hover:before,
+.acontact:hover:after,
+.acontact:hover span:before,
+.acontact:hover span:after {
+  width: calc(1.5vw / 2);
+  height: calc(1.5vw / 2);
 }
