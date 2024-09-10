@@ -34,6 +34,17 @@ a {
 .titul {
   font-family: var(--heading-font);
 }
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+}
 .icon-container {
   display: flex;
   justify-content: center;
